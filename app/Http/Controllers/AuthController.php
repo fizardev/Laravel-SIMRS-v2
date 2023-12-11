@@ -26,7 +26,9 @@ class AuthController extends Controller
      */
     public function login(LoginRequest $request): void
     {
+        // {{ dd($request); }}
         if (!Auth::attempt([
+
             'email' => $request->email,
             'password' => $request->password
         ])) {

@@ -25,7 +25,6 @@
                 </a>
                 <div class="side-nav__divider my-6"></div>
                 <ul>
-                    {{-- {{ dd($sideMenu) }} --}}
                     @foreach ($sideMenu as $menuKey => $menu)
                         @if ($menu == 'divider')
                             <li @class([

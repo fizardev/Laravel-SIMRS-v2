@@ -11,7 +11,7 @@ class TopMenu
     {
         return [
             'dashboard' => [
-                'icon' => 'home',
+                'icon' => 'database',
                 'title' => 'Dashboard',
                 'sub_menu' => [
                     'dashboard-overview-1' => [
