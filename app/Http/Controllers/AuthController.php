@@ -26,8 +26,14 @@ class AuthController extends Controller
      */
     public function login(LoginRequest $request): void
     {
+        // {{ dd($request); }}
         if (!Auth::attempt([
+<<<<<<< HEAD
             'username' => $request->username,
+=======
+
+            'email' => $request->email,
+>>>>>>> 5e72d0563a35ec1f142c71e900c14eabdc6403db
             'password' => $request->password
         ])) {
             throw new \Exception('Wrong username or password.');
