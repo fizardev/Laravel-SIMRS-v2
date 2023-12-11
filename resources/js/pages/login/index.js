@@ -7,7 +7,7 @@
         $("#login-form").find(".login__input-error").html("");
 
         // Post form
-        let email = $("#email").val();
+        let username = $("#username").val();
         let password = $("#password").val();
 
         // Loading state
@@ -19,7 +19,7 @@
 
         axios
             .post(`login`, {
-                email: email,
+                username: username,
                 password: password,
             })
             .then((res) => {
@@ -27,7 +27,7 @@
             })
             .catch((err) => {
                 $("#btn-login").html("Login");
-                if (err.response.data.message != "Wrong email or password.") {
+                if (err.response.data.message != "Wrong username or password.") {
                     for (const [key, val] of Object.entries(
                         err.response.data.errors
                     )) {

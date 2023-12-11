@@ -11,42 +11,12 @@ class SideMenu
     {
         return [
             'dashboard' => [
+                'route_name' => 'dashboard-overview-1',
                 'icon' => 'home',
                 'title' => 'Dashboard',
-                'sub_menu' => [
-                    'dashboard-overview-1' => [
-                        'icon' => 'activity',
-                        'route_name' => 'dashboard-overview-1',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'Overview 1'
-                    ],
-                    'dashboard-overview-2' => [
-                        'icon' => 'activity',
-                        'route_name' => 'dashboard-overview-2',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'Overview 2'
-                    ],
-                    'dashboard-overview-3' => [
-                        'icon' => 'activity',
-                        'route_name' => 'dashboard-overview-3',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'Overview 3'
-                    ],
-                    'dashboard-overview-4' => [
-                        'icon' => 'activity',
-                        'route_name' => 'dashboard-overview-4',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'Overview 4'
-                    ]
-                ]
+                'params' => [
+                    'layout' => 'side-menu',
+                ],
             ],
             'menu-layout' => [
                 'icon' => 'box',

@@ -14,23 +14,14 @@
             <div class="block grid-cols-2 gap-4 xl:grid">
                 <!-- BEGIN: Login Info -->
                 <div class="hidden min-h-screen flex-col xl:flex">
-                    <a
-                        class="-intro-x flex items-center pt-5"
-                        href=""
-                    >
-                        <img
-                            class="w-6"
-                            src="{{ Vite::asset('resources/images/logo.svg') }}"
-                            alt="Midone Tailwind HTML Admin Template"
-                        />
+                    <a class="-intro-x flex items-center pt-5" href="">
+                        <img class="w-6" src="{{ Vite::asset('resources/images/logo.svg') }}"
+                            alt="Midone Tailwind HTML Admin Template" />
                         <span class="ml-3 text-lg text-white"> Rubick </span>
                     </a>
                     <div class="my-auto">
-                        <img
-                            class="-intro-x -mt-16 w-1/2"
-                            src="{{ Vite::asset('resources/images/illustration.svg') }}"
-                            alt="Midone Tailwind HTML Admin Template"
-                        />
+                        <img class="-intro-x -mt-16 w-1/2" src="{{ Vite::asset('resources/images/illustration.svg') }}"
+                            alt="Midone Tailwind HTML Admin Template" />
                         <div class="-intro-x mt-10 text-4xl font-medium leading-tight text-white">
                             A few more clicks to <br />
                             sign in to your account.
@@ -54,74 +45,41 @@
                         </div>
                         <div class="intro-x mt-8">
                             <form id="login-form">
-                                <x-base.form-input
-                                    class="intro-x login__input block min-w-full px-4 py-3 xl:min-w-[350px]"
-                                    id="email"
-                                    type="text"
-                                    value="midone@left4code.com"
-                                    placeholder="Email"
-                                />
-                                <div
-                                    class="login__input-error mt-2 text-danger"
-                                    id="error-email"
-                                ></div>
+                                <x-base.form-input class="intro-x login__input block min-w-full px-4 py-3 xl:min-w-[350px]"
+                                    id="username" type="text" value="{{ old('username') }}" placeholder="Username" />
+                                <div class="login__input-error mt-2 text-danger" id="error-email"></div>
                                 <x-base.form-input
                                     class="intro-x login__input mt-4 block min-w-full px-4 py-3 xl:min-w-[350px]"
-                                    id="password"
-                                    type="password"
-                                    value="password"
-                                    placeholder="Password"
-                                />
-                                <div
-                                    class="login__input-error mt-2 text-danger"
-                                    id="error-password"
-                                ></div>
+                                    id="password" type="password" value="{{ old('password') }}" placeholder="Password" />
+                                <div class="login__input-error mt-2 text-danger" id="error-password"></div>
                             </form>
                         </div>
                         <div class="intro-x mt-4 flex text-xs text-slate-600 dark:text-slate-500 sm:text-sm">
                             <div class="mr-auto flex items-center">
-                                <x-base.form-check.input
-                                    class="mr-2 border"
-                                    id="remember-me"
-                                    type="checkbox"
-                                />
-                                <label
-                                    class="cursor-pointer select-none"
-                                    for="remember-me"
-                                >
+                                <x-base.form-check.input class="mr-2 border" id="remember-me" type="checkbox" />
+                                <label class="cursor-pointer select-none" for="remember-me">
                                     Remember me
                                 </label>
                             </div>
                             <a href="">Forgot Password?</a>
                         </div>
                         <div class="intro-x mt-5 text-center xl:mt-8 xl:text-left">
-                            <x-base.button
-                                class="w-full px-4 py-3 align-top xl:mr-3 xl:w-32"
-                                id="btn-login"
-                                variant="primary"
-                            >
+                            <x-base.button class="w-full px-4 py-3 align-top xl:mr-3 xl:w-32" id="btn-login"
+                                variant="primary">
                                 Login
                             </x-base.button>
-                            <x-base.button
-                                class="mt-3 w-full px-4 py-3 align-top xl:mt-0 xl:w-32"
-                                variant="outline-secondary"
-                            >
+                            <x-base.button class="mt-3 w-full px-4 py-3 align-top xl:mt-0 xl:w-32"
+                                variant="outline-secondary">
                                 Register
                             </x-base.button>
                         </div>
                         <div class="intro-x mt-10 text-center text-slate-600 dark:text-slate-500 xl:mt-24 xl:text-left">
                             By signin up, you agree to our
-                            <a
-                                class="text-primary dark:text-slate-200"
-                                href=""
-                            >
+                            <a class="text-primary dark:text-slate-200" href="">
                                 Terms and Conditions
                             </a>
                             &
-                            <a
-                                class="text-primary dark:text-slate-200"
-                                href=""
-                            >
+                            <a class="text-primary dark:text-slate-200" href="">
                                 Privacy Policy
                             </a>
                         </div>

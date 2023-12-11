@@ -17,7 +17,7 @@ class PageController extends Controller
             // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
             // The default value is 'side-menu'
 
-            // 'layout' => 'side-menu'
+            'layout' => 'side-menu'
         ]);
     }
 
